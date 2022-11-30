@@ -6,24 +6,22 @@ from aiogram import Bot, Dispatcher
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
 
 from tgbot.config import load_config, Config
-from tgbot.filters.admin import AdminFilter
-from tgbot.handlers.admin import register_admin
-from tgbot.handlers.echo import register_echo
-from tgbot.handlers.user import register_user
+from tgbot.handlers.commands import register_commands_handlers
+from tgbot.handlers.messages import register_messages_handlers
+from tgbot.middlewares.localization import i18n
 from tgbot.misc.commands import set_default_commands
-from tgbot.misc.logger import log
+from tgbot.misc.logger import logger
 
 
-def register_all_filters(dp: Dispatcher) -> None:
-    """Registers filters"""
-    dp.filters_factory.bind(AdminFilter)
+def register_all_middlewares(dp: Dispatcher) -> None:
+    """Registers middlewares"""
+    dp.middleware.setup(i18n)
 
 
 def register_all_handlers(dp: Dispatcher) -> None:
     """Registers handlers"""
-    register_admin(dp)
-    register_user(dp)
-    register_echo(dp)
+    register_commands_handlers(dp)
+    register_messages_handlers(dp)
 
 
 async def main() -> None:
@@ -31,8 +29,7 @@ async def main() -> None:
     config: Config = load_config(path=".env")
     bot: Bot = Bot(token=config.tg_bot.token, parse_mode="HTML")
     dp: Dispatcher = Dispatcher(bot, storage=MemoryStorage())
-    bot["config"] = config
-    register_all_filters(dp)
+    register_all_middlewares(dp)
     register_all_handlers(dp)
     try:  # On starting bot
         await set_default_commands(dp)
@@ -46,11 +43,11 @@ async def main() -> None:
 
 
 if __name__ == "__main__":
-    log.info("Starting bot")
+    logger.info("Starting bot")
     try:
         run(main())
     except (KeyboardInterrupt, SystemExit):
         pass
     except Exception as ex:
-        log.critical("Unknown error: %s", ex)
-    log.info("Bot stopped!")
+        logger.critical("Unknown error: %s", ex)
+    logger.info("Bot stopped!")

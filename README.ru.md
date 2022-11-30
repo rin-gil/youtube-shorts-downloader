@@ -30,8 +30,8 @@
 </p>
 
 <p align="right">
-    <a href="https://github.com/rin-gil/YouTubeShortsDownloader/blob/master/README.ru.md">
-        <img src="https://raw.githubusercontent.com/rin-gil/rin-gil/main/assets/img/icons/flags/russia_24x24.png" alt="Ru">
+    <a href="https://github.com/rin-gil/YouTubeShortsDownloader/blob/master/README.md">
+        <img src="https://raw.githubusercontent.com/rin-gil/rin-gil/main/assets/img/icons/flags/united-kingdom_24x24.png" alt="En">
     </a>
     <a href="https://github.com/rin-gil/YouTubeShortsDownloader/blob/master/README.ua.md">
         <img src="https://raw.githubusercontent.com/rin-gil/rin-gil/main/assets/img/icons/flags/ukraine_24x24.png" alt="Ua">
@@ -40,9 +40,9 @@
 
 ## YouTube Shorts Download Bot
 
-Bot to download videos from YouTube Shorts. Working version is available here [https://t.me/YouTubeShortsDownloaderBot](https://t.me/YouTubeShortsDownloaderBot)
+Бот для загрузки видео с YouTube Shorts. Рабочая версия доступна по ссылке [https://t.me/YouTubeShortsDownloaderBot](https://t.me/YouTubeShortsDownloaderBot)
 
-### Installing
+### Установка
 
 ```
 git clone https://github.com/rin-gil/YouTubeShortsDownloader.git
@@ -53,16 +53,16 @@ pip install -r requirements.txt
 mv .env.dist .env
 ```
 
-### Setup and launch
+### Настройка и запуск
 
-* Register a new bot with [BotFather](https://t.me/BotFather) and copy the obtained token
-* Insert the bot token into the .env file
-* Running the bot through the bot.py file `python bot.py`
+* Зарегистрируйте нового бота у [BotFather](https://t.me/BotFather) и скопируйте полученный токен
+* Вставьте токен бота в файл .env
+* Запуск бота через файл bot.py `python bot.py`
 
-### Developers
+### Разработчики
 
 * [Ringil](https://github.com/rin-gil)
 
-### License
+### Лицензия
 
-YouTubeShortsDownloader is licensed under [MIT](https://github.com/rin-gil/YouTubeShortsDownloader/blob/master/LICENCE)
+Проект YouTubeShortsDownloader распространяется по лицензии [MIT](https://github.com/rin-gil/YouTubeShortsDownloader/blob/master/LICENCE)

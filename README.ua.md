@@ -30,19 +30,19 @@
 </p>
 
 <p align="right">
+    <a href="https://github.com/rin-gil/YouTubeShortsDownloader/blob/master/README.md">
+        <img src="https://raw.githubusercontent.com/rin-gil/rin-gil/main/assets/img/icons/flags/united-kingdom_24x24.png" alt="En">
+    </a>
     <a href="https://github.com/rin-gil/YouTubeShortsDownloader/blob/master/README.ru.md">
         <img src="https://raw.githubusercontent.com/rin-gil/rin-gil/main/assets/img/icons/flags/russia_24x24.png" alt="Ru">
-    </a>
-    <a href="https://github.com/rin-gil/YouTubeShortsDownloader/blob/master/README.ua.md">
-        <img src="https://raw.githubusercontent.com/rin-gil/rin-gil/main/assets/img/icons/flags/ukraine_24x24.png" alt="Ua">
     </a>
 </p>
 
 ## YouTube Shorts Download Bot
 
-Bot to download videos from YouTube Shorts. Working version is available here [https://t.me/YouTubeShortsDownloaderBot](https://t.me/YouTubeShortsDownloaderBot)
+Бот для завантаження відео з YouTube Shorts. Робоча версія доступна за посиланням [https://t.me/YouTubeShortsDownloaderBot](https://t.me/YouTubeShortsDownloaderBot)
 
-### Installing
+### Встановлення
 
 ```
 git clone https://github.com/rin-gil/YouTubeShortsDownloader.git
@@ -53,16 +53,16 @@ pip install -r requirements.txt
 mv .env.dist .env
 ```
 
-### Setup and launch
+### Налаштування та запуск
 
-* Register a new bot with [BotFather](https://t.me/BotFather) and copy the obtained token
-* Insert the bot token into the .env file
-* Running the bot through the bot.py file `python bot.py`
+* Зареєструйте нового бота у [BotFather](https://t.me/BotFather) і скопіюйте отриманий токен
+* Вставте токен бота у файл .env
+* Запуск бота через файл bot.py `python bot.py`
 
-### Developers
+### Розробники
 
 * [Ringil](https://github.com/rin-gil)
 
-### License
+### Ліцензія
 
-YouTubeShortsDownloader is licensed under [MIT](https://github.com/rin-gil/YouTubeShortsDownloader/blob/master/LICENCE)
+Проект YouTubeShortsDownloader поширюється за ліцензією [MIT](https://github.com/rin-gil/YouTubeShortsDownloader/blob/master/LICENCE)

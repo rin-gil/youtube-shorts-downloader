@@ -1,14 +1,14 @@
 # Example configuration for running the bot on a server as a systemd service
 [Unit]
-Description=TgBot daemon
+Description=YouTubeShortsDownloader daemon
 After=network.target
 
 [Service]
 User=tgbot
 Group=tgbot
 Type=simple
-WorkingDirectory=/opt/tgbot
-ExecStart=/opt/tgbot/venv/bin/python /opt/tgbot/bot.py
+WorkingDirectory=/opt/YouTubeShortsDownloader
+ExecStart=/opt/YouTubeShortsDownloader/venv/bin/python /opt/YouTubeShortsDownloader/bot.py
 Restart=always
 
 [Install]
