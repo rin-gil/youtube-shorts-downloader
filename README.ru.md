@@ -40,7 +40,7 @@
 
 ## YouTube Shorts Download Bot
 
-Бот для загрузки видео с YouTube Shorts. Рабочая версия доступна по ссылке [https://t.me/YouTubeShortsDownloaderBot](https://t.me/YouTubeShortsDownloaderBot)
+Бот для загрузки видео с YouTube Shorts. Рабочая версия доступна по ссылке [@YouTubeShortsDownloaderBot](https://t.me/YouTubeShortsDownloaderBot)
 
 ### Установка
 
@@ -55,7 +55,7 @@ mv .env.dist .env
 
 ### Настройка и запуск
 
-* Зарегистрируйте нового бота у [BotFather](https://t.me/BotFather) и скопируйте полученный токен
+* Зарегистрируйте нового бота у [@BotFather](https://t.me/BotFather) и скопируйте полученный токен
 * Вставьте токен бота в файл .env
 * Запуск бота через файл bot.py `python bot.py`
 
