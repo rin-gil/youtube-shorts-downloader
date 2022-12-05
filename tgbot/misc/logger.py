@@ -9,5 +9,5 @@ logger: Logger = getLogger(__name__)
 basicConfig(
     filename=LOG_FILE,
     level=INFO,
-    format="%(filename)s:%(lineno)d #%(levelname)-8s [%(asctime)s] - %(name)s - %(message)s",
+    format="%(levelname)-8s %(filename)s:%(lineno)d [%(asctime)s] - %(name)s - %(message)s",
 )
