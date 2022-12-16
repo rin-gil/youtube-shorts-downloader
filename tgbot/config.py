@@ -8,7 +8,7 @@ from environs import Env
 
 
 _BASE_DIR: Path = Path(__file__).resolve().parent
-LOG_FILE: str = join(_BASE_DIR, "YouTubeShortsDownloader.log")
+LOG_FILE: str = join(_BASE_DIR, "log.log")
 BOT_LOGO: str = join(_BASE_DIR, "assets/img/bot_logo.png")
 TEMP_DIR: str = join(_BASE_DIR, "temp")
 LOCALES_DIR: str = join(_BASE_DIR, "locales")
