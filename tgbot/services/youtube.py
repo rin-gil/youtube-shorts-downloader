@@ -35,7 +35,7 @@ def download_video(url: str) -> str | None:
         )
         return path_to_mp4_file
     except PytubeError as ex:
-        logger.error("Error downloading video: %s", ex)
+        logger.info("Error downloading video: %s", ex)
     return None
 
 
