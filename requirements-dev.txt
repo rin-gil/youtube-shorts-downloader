@@ -1,2 +1,2 @@
-mypy~=1.1
-pylint~=2.15.9
+mypy==1.1.1
+pylint==2.17.1
