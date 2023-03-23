@@ -27,6 +27,10 @@ msgstr "Send a link to YouTube Shorts"
 msgid "I can download videos from YouTube Shorts"
 msgstr "I can download videos from YouTube Shorts"
 
+#: tgbot/handlers/error.py:18
+msgid "Error downloading the video"
+msgstr "Error downloading the video"
+
 #: tgbot/handlers/messages.py:20
 msgid "Wait, downloading..."
 msgstr "Wait, downloading..."
