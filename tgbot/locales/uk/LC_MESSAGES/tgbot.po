@@ -28,6 +28,10 @@ msgstr "Надішли мені посилання на YouTube Shorts"
 msgid "I can download videos from YouTube Shorts"
 msgstr "Я можу завантажувати відео з YouTube Shorts"
 
+#: tgbot/handlers/error.py:18
+msgid "Error downloading the video"
+msgstr "Помилка при завантаженні відео"
+
 #: tgbot/handlers/messages.py:20
 msgid "Wait, downloading..."
 msgstr "Зачекай, завантажую..."
