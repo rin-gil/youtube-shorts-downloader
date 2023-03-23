@@ -18,7 +18,12 @@ async def errors_handler(update: Update, exception: TelegramAPIError) -> bool:
         text="❌ " + _("Error downloading the video", locale=update.message.from_user.language_code),
         reply_to_message_id=update.message.message_id,
     )
-    logger.error("When processing the update with id=%s there was a unhandled error: %s", update.update_id, exception)
+    logger.error(
+        "When processing the update with id=%s there was a unhandled error: %s. Message text: %s.",
+        update.update_id,
+        exception,
+        update.message.text,
+    )
     await UserInput.previous()
     return True
 
