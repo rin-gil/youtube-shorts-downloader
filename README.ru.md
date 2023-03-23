@@ -6,8 +6,8 @@
     <a href="https://www.python.org/downloads/release/python-3110/">
         <img src="https://img.shields.io/badge/python-v3.11-informational" alt="python version">
     </a>
-    <a href="https://pypi.org/project/aiogram/2.23.1/">
-        <img src="https://img.shields.io/badge/aiogram-v2.23.1-informational" alt="aiogram version">
+    <a href="https://pypi.org/project/aiogram/2.25.1/">
+        <img src="https://img.shields.io/badge/aiogram-v2.25.1-informational" alt="aiogram version">
     </a>
     <a href="https://pypi.org/project/environs/9.5.0/">
         <img src="https://img.shields.io/badge/environs-v9.5.0-informational" alt="environs version">
