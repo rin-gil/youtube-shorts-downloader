@@ -12,8 +12,8 @@
     <a href="https://pypi.org/project/environs/9.5.0/">
         <img src="https://img.shields.io/badge/environs-v9.5.0-informational" alt="environs version">
     </a>
-    <a href="https://pypi.org/project/pytube/12.1.0/">
-        <img src="https://img.shields.io/badge/pytube-v12.1.0-informational" alt="pytube version">
+    <a href="https://pypi.org/project/pytube/12.1.2/">
+        <img src="https://img.shields.io/badge/pytube-v12.1.2-informational" alt="pytube version">
     </a>
     <a href="https://github.com/psf/black">
         <img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-black.svg">
