@@ -9,10 +9,16 @@
     <a href="https://pypi.org/project/aiogram/2.25.1/">
         <img src="https://img.shields.io/badge/aiogram-v2.25.1-informational" alt="aiogram version">
     </a>
+    <a href="https://pypi.org/project/aiosqlite/0.18.0/">
+        <img src="https://img.shields.io/badge/aiosqlite-v0.18.0-informational" alt="aiosqlite version">
+    </a>
     <a href="https://pypi.org/project/environs/9.5.0/">
         <img src="https://img.shields.io/badge/environs-v9.5.0-informational" alt="environs version">
     </a>
-    <a href="https://pypi.org/project/pytube/12.1.2/">
+    <a href="https://pypi.org/project/matplotlib/3.7.1/">
+        <img src="https://img.shields.io/badge/matplotlib-v3.7.1-informational" alt="matplotlib version">
+    </a>
+    <a href="https://pypi.org/project/pytube/12.1.3/">
         <img src="https://img.shields.io/badge/pytube-v12.1.2-informational" alt="pytube version">
     </a>
     <a href="https://github.com/psf/black">
