@@ -21,12 +21,7 @@ def _remove_unwanted_chars(string: str) -> str:
 
 
 def download_video(url: str) -> str | None:
-    """
-    Downloads videos from YouTube via a link
-
-    :param url: link to YouTube Shorts video
-    :return: path to downloaded mp4 file or None
-    """
+    """Downloads videos from YouTube via a link"""
     try:
         youtube_video: YouTube = YouTube(url=url)
         video_stream: Stream = youtube_video.streams.get_highest_resolution()

@@ -2,7 +2,7 @@
 
 from os.path import join, normpath
 from pathlib import Path
-from typing import NamedTuple, Optional
+from typing import NamedTuple
 
 from environs import Env
 
@@ -19,6 +19,7 @@ class TgBot(NamedTuple):
     """Bot data"""
 
     token: str
+    admin_ids: tuple[int, ...]
 
 
 class Config(NamedTuple):
@@ -27,8 +28,8 @@ class Config(NamedTuple):
     tg_bot: TgBot
 
 
-def load_config(path: Optional[str] = None) -> Config:
+def load_config(path: str | None) -> Config:
     """Loads settings from environment variables"""
     env = Env()
     env.read_env(path)
-    return Config(tg_bot=TgBot(token=env.str("BOT_TOKEN")))
+    return Config(tg_bot=TgBot(token=env.str("BOT_TOKEN"), admin_ids=tuple(map(int, env.list("ADMINS")))))

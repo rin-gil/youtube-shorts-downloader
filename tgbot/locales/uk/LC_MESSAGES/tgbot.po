@@ -2,15 +2,15 @@
 # Copyright (C) 2022 Ringil
 # This file is distributed under the same license as the
 # YouTubeShortsDownloader project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+# Ringil <noreply@domain.com>, 2022.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: YouTubeShortsDownloader v1.0.0\n"
+"Project-Id-Version: YouTubeShortsDownloader v1.1.0\n"
 "Report-Msgid-Bugs-To: noreply@domain.com\n"
-"POT-Creation-Date: 2022-11-30 23:59+0200\n"
-"PO-Revision-Date: 2022-11-30 23:59+0200\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2023-04-06 20:15+0300\n"
+"PO-Revision-Date: 2023-04-06 20:18+0300\n"
+"Last-Translator: Ringil <noreply@domain.com>\n"
 "Language: uk\n"
 "Language-Team: uk <LL@li.org>\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
@@ -19,6 +19,14 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
+
+#: tgbot/handlers/admin.py:25
+msgid "Statistics of bot video downloads by months"
+msgstr "Статистика завантажень відео ботом по місяцях"
+
+#: tgbot/handlers/admin.py:30
+msgid "Error in plotting the graph"
+msgstr "Помилка при побудові графіка"
 
 #: tgbot/handlers/commands.py:15
 msgid "Send a link to YouTube Shorts"
@@ -32,15 +40,15 @@ msgstr "Я можу завантажувати відео з YouTube Shorts"
 msgid "Error downloading the video"
 msgstr "Помилка при завантаженні відео"
 
-#: tgbot/handlers/messages.py:20
+#: tgbot/handlers/messages.py:21
 msgid "Wait, downloading..."
 msgstr "Зачекай, завантажую..."
 
-#: tgbot/handlers/messages.py:29
+#: tgbot/handlers/messages.py:31
 msgid "Unable to download this video"
 msgstr "Неможливо завантажити це відео"
 
-#: tgbot/handlers/messages.py:38
+#: tgbot/handlers/messages.py:40
 msgid "This is not a link to YouTube Shorts"
 msgstr "Це не посилання на YouTube Shorts"
 
@@ -51,4 +59,60 @@ msgstr "Початок"
 #: tgbot/misc/commands.py:18
 msgid "Bot info"
 msgstr "Інформація про бота"
+
+#: tgbot/services/statistics.py:29
+msgid "Jan"
+msgstr "Січ"
+
+#: tgbot/services/statistics.py:30
+msgid "Feb"
+msgstr "Лют"
+
+#: tgbot/services/statistics.py:31
+msgid "Mar"
+msgstr "Бер"
+
+#: tgbot/services/statistics.py:32
+msgid "Apr"
+msgstr "Кві"
+
+#: tgbot/services/statistics.py:33
+msgid "May"
+msgstr "Тра"
+
+#: tgbot/services/statistics.py:34
+msgid "Jun"
+msgstr "Чер"
+
+#: tgbot/services/statistics.py:35
+msgid "Jul"
+msgstr "Лип"
+
+#: tgbot/services/statistics.py:36
+msgid "Aug"
+msgstr "Сер"
+
+#: tgbot/services/statistics.py:37
+msgid "Sep"
+msgstr "Вер"
+
+#: tgbot/services/statistics.py:38
+msgid "Oct"
+msgstr "Жов"
+
+#: tgbot/services/statistics.py:39
+msgid "Nov"
+msgstr "Лис"
+
+#: tgbot/services/statistics.py:40
+msgid "Dec"
+msgstr "Гру"
+
+#: tgbot/services/statistics.py:62
+msgid "Downloads chart by dates"
+msgstr "Графік завантажень за датами"
+
+#: tgbot/services/statistics.py:63
+msgid "Number of downloads"
+msgstr "Кількість завантажень"
 

@@ -8,7 +8,7 @@ from aiogram.types import ContentTypes, InputFile, Message
 
 from tgbot.middlewares.localization import i18n
 from tgbot.misc.states import UserInput
-from tgbot.services.database import database
+from tgbot.services.database import increase_downloads_counter
 from tgbot.services.youtube import get_path_to_video_file
 
 _ = i18n.gettext  # Alias for gettext method
@@ -25,7 +25,7 @@ async def if_user_sent_link(message: Message) -> None:
         await message.reply_video(InputFile(path_to_mp4_file))
         await message.bot.delete_message(chat_id=chat_id, message_id=bot_reply.message_id)
         os_remove(path_to_mp4_file)
-        await database.increase_downloads_counter()
+        await increase_downloads_counter()
     else:
         await message.bot.edit_message_text(
             text="❌ " + _("Unable to download this video", locale=lang_code),
