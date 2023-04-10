@@ -1,4 +1,4 @@
-"""Functions for graphing downloads in the bot and saving the graph image"""
+"""Functions for plotting downloads in the bot and saving the graph image"""
 
 from asyncio import get_running_loop
 from os import makedirs, path
@@ -9,7 +9,7 @@ from matplotlib.axes import Axes
 from matplotlib.container import BarContainer
 from matplotlib.figure import Figure
 
-from tgbot.config import TEMP_DIR
+from tgbot.config import STATS_BG_IMAGE, TEMP_DIR
 from tgbot.middlewares.localization import i18n
 from tgbot.misc.logger import logger
 
@@ -63,6 +63,12 @@ def plot_download_graph(downloads_data: DownloadsData, locale: str) -> str | Non
         axes.set_ylabel(ylabel=_("Number of downloads", locale=locale))
         axes.set_yticks([])  # Remove labels on the ordinate axis
         plt.xticks(range_of_dates, dates)  # Add the labels on the abscissa axis
+
+        # Add background image on chart
+        bg_image = plt.imread(fname=STATS_BG_IMAGE, format="png")
+        x_min, x_max = axes.get_xlim()
+        y_min, y_max = axes.get_ylim()
+        axes.imshow(bg_image, extent=(x_min, x_max, y_min, y_max), aspect="auto", alpha=0.3)
 
         # Save the chart to a file
         path_to_statistics_graph: str = path.join(TEMP_DIR, "stats.png")
