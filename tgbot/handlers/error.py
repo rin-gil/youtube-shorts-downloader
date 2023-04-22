@@ -21,7 +21,7 @@ async def errors_handler(update: Update, exception: TelegramAPIError) -> bool:
     logger.error(
         "When processing the update with id=%s there was a unhandled error: %s. Message text: %s.",
         update.update_id,
-        exception,
+        repr(exception),
         update.message.text,
     )
     await UserInput.previous()
