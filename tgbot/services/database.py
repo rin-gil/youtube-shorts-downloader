@@ -8,7 +8,7 @@ from aiosqlite import connect
 
 from tgbot.config import DB_FILE
 from tgbot.misc.logger import logger
-from tgbot.services.statistics import DownloadsData
+from tgbot.services.statistics import BotStatisticsData
 
 
 class Database:
@@ -32,7 +32,7 @@ class Database:
             logger.critical("Database connection error: %s", ex)
             sys_exit()
 
-    async def get_downloads_data(self) -> DownloadsData:
+    async def get_statistics_data(self) -> BotStatisticsData:
         """Returns the number of YouTube Shorts downloads made by the bot in the last 12 months"""
         dates: list = []
         downloads: list = []
@@ -46,7 +46,7 @@ class Database:
                 async for row in cursor:
                     dates.append(row[0])
                     downloads.append(row[1])
-        return DownloadsData(date=dates, downloads_counter=downloads)
+        return BotStatisticsData(date=dates, downloads_counter=downloads)
 
     async def increase_downloads_counter(self) -> None:
         """Increases the value of the YouTube Shorts download counter"""
