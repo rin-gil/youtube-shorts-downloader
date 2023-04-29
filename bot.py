@@ -63,5 +63,5 @@ if __name__ == "__main__":
     except (KeyboardInterrupt, SystemExit):
         pass
     except Exception as ex:
-        logger.critical("Unknown error: %s", ex)
+        logger.critical("Unknown error: %s", repr(ex))
     logger.info("Bot stopped!")

@@ -55,6 +55,6 @@ def register_messages_handlers(dp: Dispatcher) -> None:
     dp.register_message_handler(
         if_user_sent_link, Text(startswith="https://"), regexp=r"(?:shorts\/)([0-9A-Za-z_-]{11}).*", state=None
     )
-    dp.register_message_handler(if_user_sent_text, content_types="text", state=None)
-    dp.register_message_handler(if_user_input_block, content_types="text", state=UserInput.Block)
-    dp.register_message_handler(if_user_sent_anything_but_text, content_types=ContentTypes.ANY, state="*")
+    dp.register_message_handler(if_user_sent_text, content_types=ContentTypes.TEXT, state=None)
+    dp.register_message_handler(if_user_input_block, content_types=ContentTypes.TEXT, state=UserInput.Block)
+    dp.register_message_handler(if_user_sent_anything_but_text, content_types=ContentTypes.ANY)

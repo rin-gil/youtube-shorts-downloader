@@ -33,4 +33,4 @@ async def if_admin_sent_command_stats(message: Message) -> None:
 
 def register_admin_handlers(dp: Dispatcher) -> None:
     """Registers admin handlers"""
-    dp.register_message_handler(if_admin_sent_command_stats, commands="stats", state="*", is_admin=True)
+    dp.register_message_handler(if_admin_sent_command_stats, commands="stats", state=None, is_admin=True)

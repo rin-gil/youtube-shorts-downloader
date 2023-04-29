@@ -24,5 +24,5 @@ async def if_user_sent_command_about(message: Message) -> None:
 
 def register_commands_handlers(dp: Dispatcher) -> None:
     """Registers command handlers"""
-    dp.register_message_handler(if_user_sent_command_start, commands=["start"], state="*")
-    dp.register_message_handler(if_user_sent_command_about, commands=["about"], state="*")
+    dp.register_message_handler(if_user_sent_command_start, commands=["start"], state=None)
+    dp.register_message_handler(if_user_sent_command_about, commands=["about"], state=None)
