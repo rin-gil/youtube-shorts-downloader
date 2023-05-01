@@ -9,7 +9,7 @@ from aiogram.types import ContentTypes, InputFile, Message
 from tgbot.middlewares.localization import i18n
 from tgbot.misc.states import UserInput
 from tgbot.services.database import database
-from tgbot.services.youtube import get_path_to_video_file
+from tgbot.services.youtube import youtube
 
 _ = i18n.gettext  # Alias for gettext method
 
@@ -21,14 +21,23 @@ async def if_user_sent_link(message: Message) -> None:
     chat_id: int = message.chat.id
     bot_reply: Message = await message.reply(text="⏳ " + _("Wait, downloading...", locale=lang_code))
     await UserInput.Block.set()  # Block user input while the download is in progress
-    path_to_mp4_file: str | None = await get_path_to_video_file(url=message.text)
+    path_to_mp4_file: str | None = await youtube.download_video(message.text)
     if path_to_mp4_file:
         await message.reply_video(InputFile(path_to_mp4_file))
         await message.bot.delete_message(chat_id=chat_id, message_id=bot_reply.message_id)
         os_remove(path_to_mp4_file)
     else:
         await message.bot.edit_message_text(
-            text="❌ " + _("Unable to download this video", locale=lang_code),
+            text="❌ "
+            + _("Unable to download this video", locale=lang_code)
+            + "\n\n"
+            + _("Possible reasons:", locale=lang_code)
+            + "\n"
+            + "  - "
+            + _("video is unavailable", locale=lang_code)
+            + "\n"
+            + "  - "
+            + _("video with limited access", locale=lang_code),
             chat_id=chat_id,
             message_id=bot_reply.message_id,
         )
@@ -53,7 +62,10 @@ async def if_user_sent_anything_but_text(message: Message) -> None:
 def register_messages_handlers(dp: Dispatcher) -> None:
     """Registers command handlers"""
     dp.register_message_handler(
-        if_user_sent_link, Text(startswith="https://"), regexp=r"(?:shorts\/)([0-9A-Za-z_-]{11}).*", state=None
+        if_user_sent_link,
+        Text(startswith="https://"),
+        regexp=r"(?:https?://)?(?:www\.)?" r"(?:youtube.com/shorts/)" r"([a-zA-Z0-9_-]{11})",
+        state=None,
     )
     dp.register_message_handler(if_user_sent_text, content_types=ContentTypes.TEXT, state=None)
     dp.register_message_handler(if_user_input_block, content_types=ContentTypes.TEXT, state=UserInput.Block)

@@ -8,6 +8,7 @@ import matplotlib.pyplot as plt
 from matplotlib.axes import Axes
 from matplotlib.container import BarContainer
 from matplotlib.figure import Figure
+from numpy import arange, ndarray
 
 from tgbot.config import STATS_BG_IMAGE, TEMP_DIR
 from tgbot.middlewares.localization import i18n
@@ -71,7 +72,7 @@ class PlottingBotStatistics:
         # Let's get the data for the graph
         downloads_counter: list[int] = bot_statistics_data.downloads_counter
         dates: list[str] = [self._format_date(date=date, locale=locale) for date in bot_statistics_data.date]
-        range_of_dates: range = range(len(dates))  # Number of values on the abscissa axis
+        range_of_dates: ndarray = arange(len(dates))  # Number of values on the abscissa axis
 
         # Making a chart
         bar_container: BarContainer = axes.bar(range_of_dates, downloads_counter)
@@ -85,7 +86,7 @@ class PlottingBotStatistics:
         plt.xticks(range_of_dates, dates)  # Add the labels on the abscissa axis
 
         # Add background image on chart
-        bg_image = plt.imread(fname=STATS_BG_IMAGE, format="png")
+        bg_image: ndarray = plt.imread(fname=STATS_BG_IMAGE, format="png")
         x_min, x_max = axes.get_xlim()
         y_min, y_max = axes.get_ylim()
         axes.imshow(bg_image, extent=(x_min, x_max, y_min, y_max), aspect="auto", alpha=0.9)

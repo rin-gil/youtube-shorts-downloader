@@ -5,7 +5,6 @@ from aiogram.types import BotCommand
 
 from tgbot.middlewares.localization import i18n
 
-
 _ = i18n.gettext  # Alias for gettext method
 
 
