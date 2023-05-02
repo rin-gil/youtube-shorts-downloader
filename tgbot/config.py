@@ -9,7 +9,7 @@ from environs import Env
 
 _BASE_DIR: Path = Path(__file__).resolve().parent.parent
 LOG_FILE: str = join(_BASE_DIR, "log.log")
-BOT_LOGO: str = normpath(join(_BASE_DIR, "tgbot/assets/img/bot_logo.png"))
+BOT_LOGO: str = normpath(join(_BASE_DIR, "tgbot/assets/img/bot_logo.jpg"))
 STATS_BG_IMAGE: str = normpath(join(_BASE_DIR, "tgbot/assets/img/stats_bg.png"))
 DB_FILE: str = normpath(join(_BASE_DIR, "tgbot/db.sqlite3"))
 TEMP_DIR: str = normpath(join(_BASE_DIR, "tgbot/temp"))
