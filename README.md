@@ -18,8 +18,11 @@
     <a href="https://pypi.org/project/matplotlib/3.7.1/">
         <img src="https://img.shields.io/badge/matplotlib-v3.7.1-informational" alt="matplotlib version">
     </a>
-    <a href="https://pypi.org/project/pytube/12.1.3/">
-        <img src="https://img.shields.io/badge/pytube-v12.1.3-informational" alt="pytube version">
+    <a href="https://pypi.org/project/numpy/1.24.2/">
+        <img src="https://img.shields.io/badge/numpy-v1.24.2-informational" alt="numpy version">
+    </a>
+    <a href="https://pypi.org/project/yt-dlp/2023.3.4/">
+        <img src="https://img.shields.io/badge/yt_dlp-v2023.3.4-informational" alt="yt-dlp version">
     </a>
     <a href="https://github.com/psf/black">
         <img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-black.svg">

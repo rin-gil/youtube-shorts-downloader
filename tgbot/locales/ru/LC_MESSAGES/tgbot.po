@@ -2,17 +2,16 @@
 # Copyright (C) 2022 Ringil
 # This file is distributed under the same license as the
 # YouTubeShortsDownloader project.
-# Ringil <noreply@domain.com>, 2022.
+# Ringil <e.ringil@proton.me>, 2022.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: YouTubeShortsDownloader v1.1.0\n"
-"Report-Msgid-Bugs-To: noreply@domain.com\n"
-"POT-Creation-Date: 2023-04-06 20:15+0300\n"
-"PO-Revision-Date: 2023-04-06 20:18+0300\n"
-"Last-Translator: Ringil <noreply@domain.com>\n"
+"Project-Id-Version: YouTubeShortsDownloader v1.2.0\n"
+"Report-Msgid-Bugs-To: e.ringil@proton.me\n"
+"POT-Creation-Date: 2023-05-02 08:41+0300\n"
+"PO-Revision-Date: 2023-05-02 08:42+0300\n"
+"Last-Translator: Ringil <e.ringil@proton.me>\n"
 "Language: ru\n"
-"Language-Team: ru <LL@li.org>\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
 "MIME-Version: 1.0\n"
@@ -20,13 +19,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
 
-#: tgbot/handlers/admin.py:25
+#: tgbot/handlers/admin.py:23
 msgid "Statistics of bot video downloads by months"
-msgstr "Статистика загрузок видео с ботом по месяцам"
-
-#: tgbot/handlers/admin.py:30
-msgid "Error in plotting the graph"
-msgstr "Ошибка при построении графика"
+msgstr "Статистика загрузок видео ботом по месяцам"
 
 #: tgbot/handlers/commands.py:15
 msgid "Send a link to YouTube Shorts"
@@ -36,82 +31,94 @@ msgstr "Отправь мне ссылку на YouTube Shorts"
 msgid "I can download videos from YouTube Shorts"
 msgstr "Я могу загружать видео с YouTube Shorts"
 
-#: tgbot/handlers/error.py:18
-msgid "Error downloading the video"
-msgstr "Ошибка при загрузке видео"
+#: tgbot/handlers/error.py:24
+msgid "Unexpected error. We will fix it in the near future."
+msgstr "Неожиданная ошибка. Мы исправим ее в ближайшем будущем."
 
-#: tgbot/handlers/messages.py:21
+#: tgbot/handlers/messages.py:22
 msgid "Wait, downloading..."
 msgstr "Подожди, загружаю..."
 
-#: tgbot/handlers/messages.py:31
-msgid "Unable to download this video"
-msgstr "Невозможно загрузить это видео"
+#: tgbot/handlers/messages.py:32
+msgid "Не удалось загрузить это видео"
+msgstr ""
+
+#: tgbot/handlers/messages.py:34
+msgid "Possible reasons:"
+msgstr "Возможные причины:"
+
+#: tgbot/handlers/messages.py:37
+msgid "video is unavailable"
+msgstr "видео недоступно"
 
 #: tgbot/handlers/messages.py:40
+msgid "video with limited access"
+msgstr "видео с ограниченным доступом"
+
+#: tgbot/handlers/messages.py:49
 msgid "This is not a link to YouTube Shorts"
 msgstr "Это не ссылка на YouTube Shorts"
 
-#: tgbot/misc/commands.py:17
+#: tgbot/misc/commands.py:16
 msgid "Start"
 msgstr "Старт"
 
-#: tgbot/misc/commands.py:18
+#: tgbot/misc/commands.py:17
 msgid "Bot info"
 msgstr "Информация о боте"
 
-#: tgbot/services/statistics.py:29
+#: tgbot/services/statistics.py:39
 msgid "Jan"
 msgstr "Янв"
 
-#: tgbot/services/statistics.py:30
+#: tgbot/services/statistics.py:40
 msgid "Feb"
 msgstr "Фев"
 
-#: tgbot/services/statistics.py:31
+#: tgbot/services/statistics.py:41
 msgid "Mar"
 msgstr "Мар"
 
-#: tgbot/services/statistics.py:32
+#: tgbot/services/statistics.py:42
 msgid "Apr"
 msgstr "Апр"
 
-#: tgbot/services/statistics.py:33
+#: tgbot/services/statistics.py:43
 msgid "May"
 msgstr "Май"
 
-#: tgbot/services/statistics.py:34
+#: tgbot/services/statistics.py:44
 msgid "Jun"
 msgstr "Июн"
 
-#: tgbot/services/statistics.py:35
+#: tgbot/services/statistics.py:45
 msgid "Jul"
 msgstr "Июл"
 
-#: tgbot/services/statistics.py:36
+#: tgbot/services/statistics.py:46
 msgid "Aug"
 msgstr "Авг"
 
-#: tgbot/services/statistics.py:37
+#: tgbot/services/statistics.py:47
 msgid "Sep"
 msgstr "Сен"
 
-#: tgbot/services/statistics.py:38
+#: tgbot/services/statistics.py:48
 msgid "Oct"
 msgstr "Окт"
 
-#: tgbot/services/statistics.py:39
+#: tgbot/services/statistics.py:49
 msgid "Nov"
 msgstr "Ноя"
 
-#: tgbot/services/statistics.py:40
+#: tgbot/services/statistics.py:50
 msgid "Dec"
 msgstr "Дек"
 
-#: tgbot/services/statistics.py:62
+#: tgbot/services/statistics.py:83
 msgid "Downloads chart by dates"
 msgstr "График загрузок по датам"
 
-#: tgbot/services/statistics.py:63
+#: tgbot/services/statistics.py:84
 msgid "Number of downloads"
 msgstr "Количество загрузок"
