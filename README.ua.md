@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://repository-images.githubusercontent.com/571268828/71f20754-3fcd-4833-b968-61b113ab6930" alt="YouTube Shorts Download Bot" width="640">
+    <img src="https://repository-images.githubusercontent.com/571268828/73a693e8-5d64-4f62-9630-2455ae7238fb" alt="YouTube Shorts Download Bot" width="640">
 </p>
 
 <p align="center">
