@@ -49,7 +49,7 @@
 
 ## YouTube Shorts Download Bot
 
-Бот для загрузки видео с YouTube Shorts. Рабочая версия доступна по ссылке [@YouTubeShortsDownloaderBot](https://t.me/YouTubeShortsDownloaderBot)
+Бот для загрузки видео с YouTube Shorts.
 
 ### Установка
 

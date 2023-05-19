@@ -49,7 +49,7 @@
 
 ## YouTube Shorts Download Bot
 
-Bot to download videos from YouTube Shorts. Working version is available here [@YouTubeShortsDownloaderBot](https://t.me/YouTubeShortsDownloaderBot)
+Bot to download videos from YouTube Shorts.
 
 ### Installing
 
